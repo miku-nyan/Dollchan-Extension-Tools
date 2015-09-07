@@ -10713,7 +10713,7 @@ function getImageBoard(checkDomains, checkOther) {
 		timePattern: 'w+dd+m+yyyy+hh+ii+ss'
 	};
 
-	localRun = prot === 'file:';
+	localRun = true;//prot === 'file:';(mhtml/unmht/...)
 	var i, ibObj = null, dm = localRun ?
 		(window.location.pathname.match(/\/([^-]+)-[^-]+-[^\.]+\.[a-z]+$/) || [,''])[1] :
 		window.location.hostname
