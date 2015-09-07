@@ -1,24 +1,3 @@
-// ==UserScript==
-// @name            Dollchan Extension Tools
-// @version         14.10.23.0
-// @namespace       http://www.freedollchan.org/scripts/*
-// @author          Sthephan Shinkufag @ FreeDollChan
-// @copyright       (C)2084, Bender Bending Rodriguez
-// @description     Doing some profit for imageboards
-// @icon            https://raw.github.com/SthephanShinkufag/Dollchan-Extension-Tools/master/Icon.png
-// @updateURL       https://raw.github.com/SthephanShinkufag/Dollchan-Extension-Tools/master/Dollchan_Extension_Tools.meta.js
-// @run-at          document-start
-// @grant           GM_getValue
-// @grant           GM_setValue
-// @grant           GM_deleteValue
-// @grant           GM_openInTab
-// @grant           GM_xmlhttpRequest
-// @grant           unsafeWindow
-// @include         *
-// ==/UserScript==
-
-// Copyright (c) 2014 Dollchan Extension Tools Team. See the LICENSE file for license rights and limitations (MIT).
-
 (function de_main_func(scriptStorage) {
 'use strict';
 
@@ -12006,4 +11985,4 @@ if(doc.readyState === 'interactive' || doc.readyState === 'complete') {
 	doc.addEventListener('DOMContentLoaded', initScript.bind(null, false), false);
 }
 
-})(window.opera && window.opera.scriptStorage);
+})(null, true);
